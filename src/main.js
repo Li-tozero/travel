@@ -4,8 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import fastClick from 'fastclick'
-import './assets/styles/reset.css'
-import './assets/styles/border.css'
+// 下面这两个是由于build中配置了别名,原先是./assets/styles/reset.css和./assets/styles/border.css
+import 'styles/reset.css'
+import 'styles/border.css'
+// 引入iconfont文件
+import './assets/styles/iconfont.css'
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
