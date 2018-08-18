@@ -9,6 +9,9 @@ import 'styles/reset.css'
 import 'styles/border.css'
 // 引入iconfont文件
 import './assets/styles/iconfont.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper)
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
