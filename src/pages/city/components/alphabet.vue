@@ -1,27 +1,26 @@
 <template>
   <ul class="list">
-    <li class="item">A</li>
-    <li class="item">B</li>
-    <li class="item">A</li>
-    <li class="item">B</li>
-    <li class="item">A</li>
-    <li class="item">B</li>
-    <li class="item">A</li>
-    <li class="item">B</li>
-    <li class="item">A</li>
-    <li class="item">B</li>
-    <li class="item">A</li>
-    <li class="item">B</li>
+    <li
+      class="item"
+      v-for="(item,key) of cities"
+      :key="key"
+    >
+      {{key}}
+    </li>
   </ul>
 </template>
 
 <script type="text/ecmascript-6">
 export default {
-  name: 'CityAlphabet'
+  name: 'CityAlphabet',
+  props: {
+    cities: Object
+  }
 }
 </script>
 
 <style lang="stylus" scoped>
+  @import '~styles/varibles.styl'
   .list
     display: flex
     flex-direction: column
