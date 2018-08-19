@@ -18,16 +18,16 @@ export default{
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
-        loop:true
+        loop: true
       },
-      swiperList:[
+      swiperList: [
         {
-          id:'0001',
-          imgUrl:'http://img1.qunarzz.com/piao/fusion/1805/e8/14b75b1c81fbe702.jpg_750x200_e6d4f1f1.jpg'
+          id: '0001',
+          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1805/e8/14b75b1c81fbe702.jpg_750x200_e6d4f1f1.jpg'
         },
         {
-          id:'0002',
-          imgUrl:'http://img1.qunarzz.com/piao/fusion/1808/2f/6ab88adea2619c02.jpg_750x200_675e9cf2.jpg'
+          id: '0002',
+          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1808/2f/6ab88adea2619c02.jpg_750x200_675e9cf2.jpg'
         }
       ]
     }
