@@ -26,6 +26,18 @@ export default {
           imgUrl: 'http://img1.qunarzz.com/sight/source/1506/fd/08f524fa9455b4.jpg_r_640x214_b37dbb39.jpg',
           title: '暑期玩转粤港澳',
           desc: '这个假期开启最高大上的国内游'
+        },
+        {
+          id: '0002',
+          imgUrl: 'http://img1.qunarzz.com/sight/source/1506/fd/08f524fa9455b4.jpg_r_640x214_b37dbb39.jpg',
+          title: '暑期玩转粤港澳',
+          desc: '这个假期开启最高大上的国内游'
+        },
+        {
+          id: '0003',
+          imgUrl: 'http://img1.qunarzz.com/sight/source/1506/fd/08f524fa9455b4.jpg_r_640x214_b37dbb39.jpg',
+          title: '暑期玩转粤港澳',
+          desc: '这个假期开启最高大上的国内游'
         }
       ]
     }
