@@ -63,11 +63,6 @@ export default{
           id: '0008',
           imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/95/8d02011d149bdb02.png',
           desc: '汽车票'
-        },
-        {
-          id: '0009',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-          desc: '热门景点'
         }
       ]
     }
@@ -82,7 +77,6 @@ export default{
         }
         pages[page].push(item)
       })
-      console.log(pages)
       return pages
     }
   }
@@ -95,6 +89,8 @@ export default{
   .icons >>> .swiper-container
     height: 0
     padding-bottom: 50%
+  .icons
+    margin-top: .1rem
     .icon
       overflow: hidden
       position:relative
