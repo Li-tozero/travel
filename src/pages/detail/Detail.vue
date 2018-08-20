@@ -54,8 +54,10 @@ export default {
         this.gallaryImgs = data.gallaryImgs
         this.list = data.categoryList
       }
+    },
+    handleShow () {
+      this.show = !this.show
     }
-
   },
   mounted () {
     this.getDetailInfo()
