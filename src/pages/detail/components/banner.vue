@@ -13,7 +13,7 @@
       </div>
     </div>
     <CommonGallary
-      :imgs="imgs"
+      :imgs="bannerImgs"
       v-if="showGallary"
       @close="handleGallaryClose"
     ></CommonGallary>
