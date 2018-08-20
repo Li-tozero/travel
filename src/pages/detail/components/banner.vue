@@ -1,14 +1,14 @@
 <template>
   <div>
     <div class="banner" @click="handleBannerGallary">
-      <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1603/3b/3bd311262ee06d8c90.img.jpg_600x330_cd2e3bf7.jpg"/>
+      <img class="banner-img" :src="bannerImg"/>
       <div class="banner-info">
         <div class="banner-title">
-          广州长隆旅游度假区(AAAAA景区)
+          {{this.sightName}}
         </div>
         <div class="banner-number banner-icon">
           <span class="iconfont">&#xe692;</span>
-          39
+          {{this.bannerImgs.length}}
         </div>
       </div>
     </div>
@@ -24,13 +24,14 @@
 import CommonGallary from 'common/gallary/gallary.vue'
 export default {
   name: 'DetailBanner',
+  props: {
+    sightName: String,
+    bannerImg: String,
+    bannerImgs: Array
+  },
   data () {
     return {
-      showGallary: false,
-      imgs: [
-        'http://img1.qunarzz.com/sight/p0/201405/29/b5d02d4967e16b8cbc40f1dbd8186e6f.jpg_r_800x800_504fbd5c.jpg',
-        'http://img1.qunarzz.com/sight/p0/201405/29/b5d02d4967e16b8cbc40f1dbd8186e6f.jpg_r_800x800_504fbd5c.jpg'
-      ]
+      showGallary: false
     }
   },
   components: {

@@ -23,5 +23,9 @@ export default new Router({
       name: 'Detail',
       component: Detail
     }
-  ]
+  ],
+  // 解决路由中页面滚动的问题
+  scrollBehavior (to, from, savedPosition) {
+    return {x: 0, y: 0}
+  }
 })
