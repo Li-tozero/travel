@@ -45,11 +45,19 @@ export default {
       }
     }
   },
-  activated () {
+  // activated () {
+  // window.addEventListener('scroll', this.handleScroll)
+  // },
+  // 对事件进行解绑
+  // deactivated () {
+  // window.removeEventListener('scroll', this.handleScroll)
+  // }
+  // 由于在app.vue中对detail中进行了exclude，所以不存在缓存，故不能使用以上两个钩子
+  mounted () {
     window.addEventListener('scroll', this.handleScroll)
   },
   // 对事件进行解绑
-  deactivated () {
+  unmounted () {
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
