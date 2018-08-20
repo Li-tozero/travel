@@ -45,11 +45,17 @@ export default {
       }
     }
   },
-  activated () {
+  // activated () {
+  // window.addEventListener('scroll', this.handleScroll)
+  // },
+  // 对事件进行解绑
+  // deactivated () {
+  // window.removeEventListener('scroll', this.handleScroll)
+  // }
+  mounted () {
     window.addEventListener('scroll', this.handleScroll)
   },
-  // 对事件进行解绑
-  deactivated () {
+  unmounted () {
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
